@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный гараж - AutoDrive 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-car"></i> AutoDrive 2025</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                    <li><a href="protected.html">Личный гараж</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="protected-content">
+                <div class="dashboard-header">
+                    <h2><i class="fas fa-warehouse"></i> Мой Гараж</h2>
+                </div>
+
+                <div id="protectedContent" class="hidden">
+                    <div class="garage-welcome">
+                        <p>Добро пожаловать в ваш личный гараж!</p>
+                    </div>
+
+                    <div class="garage-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-car"></i>
+                            <h3>Мои автомобили</h3>
+                            <p class="stat-number">3</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-road"></i>
+                            <h3>Всего пробег</h3>
+                            <p class="stat-number">45,621 км</p>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Достижения</h3>
+                            <p class="stat-number">7</p>
+                        </div>
+                    </div>
+
+                    <div class="user-cars">
+                        <h3>Ваша коллекция</h3>
+                        <div class="car-collection">
+                            <div class="car-card">
+                                <div class="car-image">
+                                    <i class="fas fa-car-side fa-3x"></i>
+                                </div>
+                                <div class="car-details">
+                                    <h4>BMW M5 Competition</h4>
+                                    <p>Год: 2024</p>
+                                    <p>Пробег: 12,400 км</p>
+                                    <div class="car-status">
+                                        <span class="status-tag">Отличное состояние</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-card">
+                                <div class="car-image">
+                                    <i class="fas fa-car-side fa-3x"></i>
+                                </div>
+                                <div class="car-details">
+                                    <h4>Tesla Model 3</h4>
+                                    <p>Год: 2025</p>
+                                    <p>Пробег: 5,200 км</p>
+                                    <div class="car-status">
+                                        <span class="status-tag">Новый</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="userData" class="user-profile"></div>
+                    <button id="logoutBtn" class="btn btn-danger">Выйти из гаража</button>
+                </div>
+
+                <div id="unauthorizedMessage">
+                    <div class="garage-locked">
+                        <i class="fas fa-lock fa-4x"></i>
+                        <h3>Гараж закрыт</h3>
+                        <p>Для доступа к личному гаражу необходимо авторизоваться.</p>
+                        <a href="login.html" class="btn btn-primary">Войти</a>
+                    </div>
+                </div>
+
+                <div id="message" class="message"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
